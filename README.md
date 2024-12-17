@@ -1,21 +1,96 @@
-🚀 React Tailwind Starter 🛠️
+# Media Player
 
-A jumpstart on projects with React-Vite-Tailwind!  
-This repository serves as a starter template that combines the power of ReactJS, Vite, and Tailwind CSS, enabling you to rapidly initiate your projects without the hassle of setting up the basics every time.
+A React-based media player application built using **Context API** and **Reducer** for efficient state management. This project offers seamless playback controls, dynamic track handling, and an intuitive user interface.
 
-🎯 Features:
-- **Effortless Setup**: Say goodbye to configuration woes. Get up and running in seconds with a pre-configured environment.
-- **ReactJS**: Harness the capabilities of ReactJS for building dynamic and interactive user interfaces.
-- **Vite**: Enjoy lightning-fast development with Vite's modern build tooling and near-instant hot module replacement.
-- **Tailwind CSS**: Create stylish and responsive designs effortlessly using the utility-first approach of Tailwind CSS.
+## Features
 
-🔧 How to Use:
-1. **Clone**: Start by cloning this repository to your local machine.
-2. **Install Dependencies**: Run `npm install` or `yarn install` to install project dependencies.
-3. **Development**: Launch the development server with `npm run dev` or `yarn dev`. Your app will be available at `http://localhost:3000`.
-4. **Production Build**: When you're ready to deploy, create an optimized production build using `npm run build` or `yarn build`.
+- 🎵 **Play, Pause, Skip, and Previous Controls**
+- 📜 **Real-time Progress Bar**
+- ⏲️ **Duration and Time Tracking**
+- 🔊 **Dynamic Audio Track Handling**
+- 💡 **Lightweight and Optimized State Management**
 
-📚 Resources:
-- ReactJS Documentation: https://reactjs.org/docs/getting-started.html
-- Vite Documentation: https://vitejs.dev/guide/
-- Tailwind CSS Documentation: https://tailwindcss.com/docs
+## Tech Stack
+
+- **React.js**: Frontend framework for building the user interface
+- **Context API**: For managing global state
+- **Reducer**: For updating state in a predictable way
+- **CSS**: For styling the application
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/media-player.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd media-player
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+5. Open your browser and visit:
+   ```
+   http://localhost:3000
+   ```
+
+## Usage
+
+1. Add your audio files to the `data/musicData.json` file in the following format:
+   ```json
+   [
+     {
+       "id": 1,
+       "title": "Track 1",
+       "url": "path/to/track1.mp3"
+     },
+     {
+       "id": 2,
+       "title": "Track 2",
+       "url": "path/to/track2.mp3"
+     }
+   ]
+   ```
+
+2. Use the playback controls to play, pause, skip, or go to the previous track.
+
+## File Structure
+
+```
+src/
+├── components/
+│   ├── ProgressBar.js   # Displays the progress bar and playback controls
+├── context/
+│   ├── MusicContext.js  # Context API for state management
+├── data/
+│   ├── musicData.json   # Contains the list of audio tracks
+├── App.js               # Root component
+└── index.js             # Entry point
+```
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have a feature request, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Inspired by modern music player designs.
+- Built with ❤️ using React.
+
+---
+
+Enjoy the app and feel free to share your feedback!
